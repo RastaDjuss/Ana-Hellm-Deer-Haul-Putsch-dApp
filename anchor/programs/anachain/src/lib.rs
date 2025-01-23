@@ -2,7 +2,7 @@
 
 use anchor_lang::prelude::*;
 
-declare_id!("coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF");
+declare_id!("CPek9mXxyHpiimTc6NrU6h1WTBun1p93442YmP5fewtM");
 
 #[program]
 pub mod anachain {

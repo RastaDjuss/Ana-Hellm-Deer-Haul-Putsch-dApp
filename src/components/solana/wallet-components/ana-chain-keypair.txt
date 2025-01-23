@@ -1,0 +1,7 @@
+Wrote new keypair to /home/anarchsun/devs/ana-chain/src/components/solana/wallet-compnonts/ana-chain.json
+==================================================================================
+pubkey: CPek9mXxyHpiimTc6NrU6h1WTBun1p93442YmP5fewtM
+==================================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+mouse gentle hungry remember drift dwarf noise logic winter victory mixture bullet
+==================================================================================

@@ -1,14 +1,49 @@
 [workspace]
 members = [
-    "programs/*"
+    "programs/anachain",
+    "programs/gateway",
+    "programs/quadratic",
+    "programs/realm-voter",
+    "programs/nft-voter",
+    "programs/bonk-plugin",
+    "programs/token-haver",
+    "programs/token-voter",
+    "programs/governance/addin-mock/program",
+    "programs/governance/addin-api",
+    "programs/governance/program",
+    "programs/governance/test-sdk",
+    "programs/governance/tools",
+    "programs/governance/chat/program",
 ]
 resolver = "2"
 
+exclude = []
+
+[profile.dev]
+codegen-units = 1
+incremental = false
+opt-level = 0
+
 [profile.release]
 overflow-checks = true
-lto = "fat"
+lto = "thin"
 codegen-units = 1
 [profile.release.build-override]
 opt-level = 3
 incremental = false
 codegen-units = 1
+
+[workspace.lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = [
+    'cfg(target_os, values("solana"))',
+    'cfg(feature, values("frozen-abi", "no-entrypoint"))',
+]
+
+[workspace.metadata.release]
+pre-release-commit-message = "Publish {{crate_name}} v{{version}}"
+tag-message = "Publish {{crate_name}} v{{version}}"
+consolidate-commits = false
+
+[patch.crates-io]
+zeroize = { version = "1", optional = true }

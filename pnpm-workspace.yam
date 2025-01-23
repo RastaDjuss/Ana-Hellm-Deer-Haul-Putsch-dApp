@@ -1,0 +1,3 @@
+packages:
+  - .                         # Racine (Next.js / React)
+  - anchor

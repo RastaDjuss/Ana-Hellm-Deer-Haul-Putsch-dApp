@@ -1,0 +1,7 @@
+Wrote new keypair to /home/anarchsun/.config/solana/id.json
+===================================================================
+pubkey: 2Z6fKR182PeoemoYurNAmgxnRtoV3yMd99EytHUJpQBD
+===================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+face firm tooth odor secret baby rib name start awkward risk borrow
+===================================================================

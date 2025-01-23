@@ -19,7 +19,7 @@
         "name": "next"
       }
     ],
-    "baseUrl": "../ana-chain",
+    "baseUrl": "./",
     "paths": {
       "@project/anchor": ["anchor/src"],
       "@/*": ["./src/*"]
@@ -27,6 +27,6 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.spec.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": [
-    "../ana-chain/node_modules"
+    ".//node_modules"
   ]
 }
