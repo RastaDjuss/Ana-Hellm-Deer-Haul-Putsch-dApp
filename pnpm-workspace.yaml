@@ -1,4 +1,8 @@
 packages:
+  -  .
+  - "programs/governance-program-library/*"
+  - "programs/governance-program-library/**"
   - "programs/*"
   - "programs/**"
+  - ".next"
   - ".next"

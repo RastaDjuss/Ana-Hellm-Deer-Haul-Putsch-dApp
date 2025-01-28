@@ -76,7 +76,7 @@ Discord server: [spl-governance-discord](https://discord.gg/VsPbrK2hJk)
 The diagram below shows an illustrative configuration of the program accounts when used to control upgrades
 of multiple programs through proposals
 
-![Accounts diagram](./resources/governance-accounts.jpg)
+![Accounts diagram](resources/governance-accounts.jpg)
 
 ### Realm account
 
@@ -196,7 +196,7 @@ the DAO until the token is distributed.
 
 ### Proposal Workflow
 
-![Proposal Workflow](./resources/governance-workflow.jpg)
+![Proposal Workflow](resources/governance-workflow.jpg)
 
 ## Audit
 

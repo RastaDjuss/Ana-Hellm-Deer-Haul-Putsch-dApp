@@ -1,6 +1,4 @@
-[submodule "anchor/programs/governance/solana-program-library"]
-	path = anchor/programs/governance/solana-program-library
-	url = https://github.com/solana-labs/governance-program-library.git
-[submodule "anchor/programs/governance/governance-program-library"]
-	path = anchor/programs/governance/governance-program-library
+
+[submodule "anchor/programs/governance-program-library"]
+	path = anchor/programs/governance-program-library
 	url = https://github.com/solana-labs/governance-program-library.git

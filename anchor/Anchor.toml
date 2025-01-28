@@ -17,18 +17,12 @@ token-haver = "7gobfUihgoxA14RUnVaseoah89ggCgYAzgz1JoaPAXam"
 token_voter = "3JhBg9bSPcfWGFa3t8LH7ooVtrjm45yCkHpxYXMXstUM"
 bonk-plugin = "7yJT49ajgYyuhWYzQMzwEt9u9Zbbt7r8Ft2wq1bhhfyy"
 
-[registry]
-url = [
-       "https://api.apr.dev",
-       "https://anchor.projectserum.com",
-]
-
 [provider]
 cluster = "Localnet"
 wallet = "~/devs/ana-chain/src/components/solana/wallet-components/ana-chain.json"
 
 [scripts]
-test = "../node_modules/.bin/jest --preset ts-jest && pnpm run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "pnpm run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
 
 [test]
 startup_wait = 5000
