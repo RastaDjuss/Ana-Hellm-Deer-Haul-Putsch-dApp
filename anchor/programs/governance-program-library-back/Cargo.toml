@@ -1,0 +1,12 @@
+[package]
+name = "governance-program-library"
+version = "2.2.0"
+edition = "2018"
+
+resolver = "2"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.2.169"
