@@ -1,6 +1,3 @@
-[submodule "anchor/programs/governance-program-library"]
-	path = anchor/programs/governance-program-library
-	url = https://github.com/RastaDjuss/governance-program-library.git
 [submodule "governance-ui"]
 	path = governance-ui
 	url = https://github.com/RastaDjuss/governance-ui.git

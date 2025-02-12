@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  governance-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'  # Expose `:3000` for governance-UI on localhost
+    stdin_open: true
+    tty: true
+    command: pnpm dev # Start Next.js dev server
+
+  solana-validator:
+    image: solanalabs/solana:edge # Validator container
+    restart: always
+    ports:
+      - '8899:8899'  # RPC
+      - '8900:8900'  # Gossip
+    command: >
+      solana-test-validator --ledger /test-ledger --reset
+    volumes:
+      - ./test-ledger:/test-ledger

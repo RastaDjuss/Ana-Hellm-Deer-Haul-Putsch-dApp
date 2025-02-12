@@ -2,27 +2,30 @@
 
 import { PublicKey } from '@solana/web3.js'
 import { useMemo } from 'react'
-
 import { useParams } from 'next/navigation'
 
-import { ExplorerLink } from '../cluster/cluster-ui'
 import { AppHero, ellipsify } from '../ui/ui-layout'
+import { ExplorerLink } from '../cluster/cluster-ui'
 import { AccountBalance, AccountButtons, AccountTokens, AccountTransactions } from './account-ui'
+import { AccountGovernance } from './account-governance' // Si ce composant est manquant, créez un boilerplate.
 
+// Fonction parentale qui gère tous les détails de l'adresse publique
 export default function AccountDetailFeature() {
-  const params = useParams()
+  const params = useParams() // Obtenir les paramètres d'URL
   const address = useMemo(() => {
     if (!params.address) {
-      return
+      return null
     }
     try {
       return new PublicKey(params.address)
     } catch (e) {
-      console.log(`Invalid public key`, e)
+      console.error(`Invalid public key`, e)
+      return null
     }
   }, [params])
+
   if (!address) {
-    return <div>Error loading account</div>
+    return <div className="alert alert-error">Error: Invalid account address.</div>
   }
 
   return (
@@ -31,7 +34,7 @@ export default function AccountDetailFeature() {
         title={<AccountBalance address={address} />}
         subtitle={
           <div className="my-4">
-            <ExplorerLink path={`account/${address}`} label={ellipsify(address.toString())} />
+            <ExplorerLink label={ellipsify(address.toString())} path={`account/${address}`} />
           </div>
         }
       >
@@ -39,7 +42,10 @@ export default function AccountDetailFeature() {
           <AccountButtons address={address} />
         </div>
       </AppHero>
+
+      {/* Insérez votre structure ici */}
       <div className="space-y-8">
+        <AccountGovernance address={address} />
         <AccountTokens address={address} />
         <AccountTransactions address={address} />
       </div>
