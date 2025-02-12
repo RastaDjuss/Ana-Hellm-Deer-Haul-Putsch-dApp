@@ -1,0 +1,62 @@
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121139675Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m agave-validator 2.1.11 (src:134be7c1; feat:3039680930, client:Agave)
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121180995Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "agave-validator",
+            "--ledger",
+            ".anchor/test-ledger",
+            "--identity",
+            "/home/anarchsun/devs/ana-chain/anchor/wallets/anachain.json",
+            "--rpc-port",
+            "8899",
+        ],
+    }
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121202673Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121207843Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121211069Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121542414Z [0m[33mWARN [0m agave_validator[0m[38;5;8m][0m --vote-account not specified, validator will not vote
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121623843Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Snapshot configuration: full snapshot interval: 25000 slots, incremental snapshot interval: 100 slots
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121644872Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: environment variable not found
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121785049Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_max: recommended=134217728, current=212992 too small
+OS network limit test failed. See: https://docs.solanalabs.com/operations/guides/validator-start#system-tuning
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121786400Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config platform="unix/linux/x86_64"
+[0m[38;5;8m[[0m2025-02-12T12:48:33.121803903Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_max=212992i
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242481649Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m agave-validator 2.1.11 (src:134be7c1; feat:3039680930, client:Agave)
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242522780Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "agave-validator",
+            "--ledger",
+            ".anchor/test-ledger",
+            "--identity",
+            "/home/anarchsun/devs/ana-chain/anchor/wallets/anachain.json",
+            "--rpc-port",
+            "8900",
+        ],
+    }
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242547552Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242557562Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242561224Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242913751Z [0m[33mWARN [0m agave_validator[0m[38;5;8m][0m --vote-account not specified, validator will not vote
+[0m[38;5;8m[[0m2025-02-12T12:50:43.242998014Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Snapshot configuration: full snapshot interval: 25000 slots, incremental snapshot interval: 100 slots
+[0m[38;5;8m[[0m2025-02-12T12:50:43.243021504Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: environment variable not found
+[0m[38;5;8m[[0m2025-02-12T12:50:43.243153828Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config platform="unix/linux/x86_64"
+[0m[38;5;8m[[0m2025-02-12T12:50:43.243224904Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_max: recommended=134217728, current=212992 too small
+[0m[38;5;8m[[0m2025-02-12T12:50:43.243228857Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_max=212992i
+OS network limit test failed. See: https://docs.solanalabs.com/operations/guides/validator-start#system-tuning
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979299751Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m agave-validator 2.1.14 (src:035c4eb0; feat:3271415109, client:Agave)
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979341321Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Starting validator with: ArgsOs {
+        inner: [
+            "agave-validator",
+            "--identity",
+            "wallets/anachain.json",
+        ],
+    }
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979360856Z [0m[33mWARN [0m solana_perf[0m[38;5;8m][0m CUDA is disabled
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979366839Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX detected
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979371130Z [0m[32mINFO [0m solana_perf[0m[38;5;8m][0m AVX2 detected
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979780954Z [0m[33mWARN [0m agave_validator[0m[38;5;8m][0m --vote-account not specified, validator will not vote
+[0m[38;5;8m[[0m2025-02-12T15:52:37.979990494Z [0m[32mINFO [0m agave_validator[0m[38;5;8m][0m Snapshot configuration: full snapshot interval: 25000 slots, incremental snapshot interval: 100 slots
+[0m[38;5;8m[[0m2025-02-12T15:52:37.980020619Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m metrics disabled: environment variable not found
+[0m[38;5;8m[[0m2025-02-12T15:52:37.980145082Z [0m[32mINFO [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config platform="unix/linux/x86_64"
+[0m[38;5;8m[[0m2025-02-12T15:52:37.980186844Z [0m[33mWARN [0m solana_core::system_monitor_service[0m[38;5;8m][0m   net.core.rmem_max: recommended=134217728, current=212992 too small
+[0m[38;5;8m[[0m2025-02-12T15:52:37.980187968Z [0m[33mWARN [0m solana_metrics::metrics[0m[38;5;8m][0m datapoint: os-config net.core.rmem_max=212992i
+OS network limit test failed. See: https://docs.solanalabs.com/operations/guides/validator-start#system-tuning
